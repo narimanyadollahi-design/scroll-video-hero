@@ -1,0 +1,293 @@
+{
+  "_doc": "Scenario playbooks. Placeholders: {business} {product} {object} {setting}. Each leg is ONE continuous camera move of 4-8 s; legs chain (next leg starts from the last frame of the previous one). `sees` is what the visitor sees at the end of the leg. `overlay` is the copy beat that scrolls over that part.",
+  "industries": {
+    "furniture-interior": {
+      "title": "Furniture, interiors, home",
+      "journey": "approach from outside -> through the glass -> across the room -> down to the material",
+      "setting": "a calm modern home at blue-hour dusk, warm interior light",
+      "object": "the sofa",
+      "legs": [
+        {"beat": "Establish", "camera": "slow forward dolly across the lawn toward the glass wall", "sees": "the lit room, {object} faintly visible", "overlay": "A quiet house, seen from outside."},
+        {"beat": "Enter", "camera": "continue forward, pass through the glass into the room", "sees": "the whole lounge, {object} centred", "overlay": "Light leads you in."},
+        {"beat": "Approach", "camera": "continue forward and slightly lower toward {object}", "sees": "{object} in a three-quarter view", "overlay": "Made to the size of your home."},
+        {"beat": "Detail", "camera": "continue forward and lower along the side of {object}", "sees": "base, edge and upholstery up close", "overlay": "Every line, drawn with care."},
+        {"beat": "Material", "camera": "keep pushing until the fabric and the arm fill the frame", "sees": "texture and stitching", "overlay": "Design finds its meaning in detail."}
+      ],
+      "palette": "warm walnut, taupe, brass accent on deep forest or charcoal",
+      "type": "elegant serif display + small tracked uppercase labels",
+      "tone": "quiet, assured, precise; no exclamation marks",
+      "risks": ["mirrored left/right layout of the product across references", "model rotating the sofa instead of moving the camera", "repetitive stripes tear under optical flow"],
+      "layers": {"headline": ["Made To The Size", "Of Your Home"], "paragraph": "{product} is made to order, in the fabric and size you choose.", "bold": "Every piece is built for one home.", "big": "Every {business} piece is designed and built for one home. We choose the fabric, the wood and the proportion with you, down to the last stitch."}
+    },
+    "real-estate-architecture": {
+      "title": "Real estate, architecture, construction",
+      "journey": "arrive -> enter -> walk the main space -> out to the view",
+      "setting": "a finished residence at golden hour",
+      "object": "the main living space",
+      "legs": [
+        {"beat": "Arrive", "camera": "forward glide along the approach toward the entrance", "sees": "the facade and entrance", "overlay": "Arrive."},
+        {"beat": "Enter", "camera": "continue forward through the door into the hall", "sees": "the double-height hall", "overlay": "Space with a point of view."},
+        {"beat": "Living", "camera": "continue forward through the living area", "sees": "the open plan and the garden beyond", "overlay": "Built around the light."},
+        {"beat": "Craft", "camera": "continue and drift toward the window wall", "sees": "materials: stone, oak, steel", "overlay": "Details you can feel."},
+        {"beat": "View", "camera": "continue through the glass out to the terrace", "sees": "the landscape", "overlay": "A view worth coming home to."}
+      ],
+      "palette": "stone, oak, warm white, one accent colour from the site",
+      "type": "grotesk or serif display, wide tracking labels",
+      "tone": "confident, spatial, understated",
+      "risks": ["geometry warping on long straight lines", "reflections in glass", "no people close-up"],
+      "layers": {"headline": ["Spaces That Feel", "Like Home"], "paragraph": "{business} designs and builds residences with one idea: light first.", "bold": "Every plan starts from the view.", "big": "{business} designs, builds and finishes {product} with the same patience: plan, material, light, then the last detail."}
+    },
+    "restaurant-cafe": {
+      "title": "Restaurants, cafes, bakeries",
+      "journey": "street -> door -> counter -> the dish / the cup",
+      "setting": "a warm, intimate dining room in the evening",
+      "object": "the signature dish",
+      "legs": [
+        {"beat": "Street", "camera": "slow forward dolly toward the lit entrance", "sees": "the glowing door and window", "overlay": "Somewhere to arrive."},
+        {"beat": "Inside", "camera": "continue through the door along the room", "sees": "tables, candlelight, the bar", "overlay": "Made slowly."},
+        {"beat": "Counter", "camera": "continue and lower toward the pass / counter", "sees": "hands-free preparation, steam, tools", "overlay": "Fire, salt, patience."},
+        {"beat": "Dish", "camera": "continue forward and down toward {object}", "sees": "{object} on the table, steam rising", "overlay": "The dish we are known for."},
+        {"beat": "Detail", "camera": "keep pushing until texture fills the frame", "sees": "crust, glaze, steam close up", "overlay": "Taste begins here."}
+      ],
+      "palette": "warm amber, deep brown, cream, one ingredient colour",
+      "type": "soft serif display + small caps labels",
+      "tone": "warm, sensory, short sentences",
+      "risks": ["hands and faces (avoid close-ups)", "steam flicker", "food shape drift between legs"],
+      "layers": {"headline": ["Cooked Slowly,", "Served Warm"], "paragraph": "{business} cooks {product} the long way, on purpose.", "bold": "Come hungry.", "big": "At {business} everything is made in house, every day: the dough, the broth, the sauce, and the time it takes."}
+    },
+    "hotel-travel": {
+      "title": "Hotels, villas, travel",
+      "journey": "horizon -> arrival path -> lobby -> room -> balcony view",
+      "setting": "a boutique property in soft morning light",
+      "object": "the suite",
+      "legs": [
+        {"beat": "Horizon", "camera": "slow forward glide over water / landscape toward the property", "sees": "the property in its setting", "overlay": "Far from the usual."},
+        {"beat": "Arrival", "camera": "continue along the path to the entrance", "sees": "the entrance and garden", "overlay": "Arrive slowly."},
+        {"beat": "Lobby", "camera": "continue through the entrance", "sees": "the lobby, textures, light", "overlay": "Hospitality, quietly."},
+        {"beat": "Room", "camera": "continue into {object}", "sees": "bed, linen, window", "overlay": "Rest, properly."},
+        {"beat": "View", "camera": "continue through the balcony doors", "sees": "the view", "overlay": "Your view for the week."}
+      ],
+      "palette": "sand, sea blue, white linen, brass",
+      "type": "serif display, airy spacing",
+      "tone": "calm, inviting",
+      "risks": ["people", "water shimmer artifacts", "scale drift in large exteriors"],
+      "layers": {"headline": ["A Place To", "Arrive Slowly"], "paragraph": "{business} is a small property for people who prefer quiet.", "bold": "Rooms with a view, time with no schedule.", "big": "{business} is built around slowness: the light in the morning, the sound of the water, and a room that asks nothing of you."}
+    },
+    "jewelry-watch": {
+      "title": "Jewelry, watches, luxury objects",
+      "journey": "macro approach -> light catching the surface -> engraving/setting -> the whole piece",
+      "setting": "a dark studio with a single soft key light",
+      "object": "the piece",
+      "legs": [
+        {"beat": "Glint", "camera": "slow macro push toward {object} out of darkness", "sees": "a single highlight on metal", "overlay": "Light, caught."},
+        {"beat": "Surface", "camera": "continue forward along the surface", "sees": "polish, grain of the metal", "overlay": "Shaped by hand."},
+        {"beat": "Setting", "camera": "continue and drift toward the stone / detail", "sees": "stone, clasp, engraving", "overlay": "Set once."},
+        {"beat": "Form", "camera": "pull the focus back as the camera keeps moving", "sees": "{object} in full", "overlay": "A piece that stays."},
+        {"beat": "Scale", "camera": "continue to a soft hold on the signature angle", "sees": "{object} on a neutral surface", "overlay": "Made for one person."}
+      ],
+      "palette": "black, warm gold, soft white",
+      "type": "high-contrast serif display, small tracked labels",
+      "tone": "restrained, precise, few words",
+      "risks": ["hands and wearers (avoid)", "gold colour drift between legs", "tiny text engravings are rendered wrongly (avoid text)"],
+      "layers": {"headline": ["Made To Be", "Worn For Years"], "paragraph": "{business} makes {product} in small runs.", "bold": "Each piece is finished by hand.", "big": "Every {business} piece starts as a drawing and ends as an object you will not take off: weight, polish and proportion, decided together."}
+    },
+    "beauty-perfume-skincare": {
+      "title": "Beauty, perfume, skincare",
+      "journey": "liquid/light -> bottle emerges -> texture -> composition",
+      "setting": "a minimal studio, pale surface, soft diffused light",
+      "object": "the bottle",
+      "legs": [
+        {"beat": "Liquid", "camera": "slow forward move into a pool of light / liquid", "sees": "ripples of light", "overlay": "Begin with a feeling."},
+        {"beat": "Reveal", "camera": "continue forward as {object} rises into frame", "sees": "{object} emerging", "overlay": "Quietly made."},
+        {"beat": "Texture", "camera": "continue and drift toward the cap / label side", "sees": "glass, droplets, texture", "overlay": "Clean, on purpose."},
+        {"beat": "Form", "camera": "continue to a wider soft composition", "sees": "{object} with a few botanical elements", "overlay": "Nothing extra."},
+        {"beat": "Hold", "camera": "gentle hold with a very slow push", "sees": "hero shot", "overlay": "Wear it daily."}
+      ],
+      "palette": "milk white, pale pink or sage, soft shadow",
+      "type": "light serif or humanist sans, generous spacing",
+      "tone": "soft, sensory, minimal",
+      "risks": ["label text is rendered wrongly (put the brand in HTML, not in the image)", "liquid physics", "skin close-ups"],
+      "layers": {"headline": ["Made Gently,", "Worn Daily"], "paragraph": "{business} makes {product} with few ingredients and long patience.", "bold": "Nothing you do not need.", "big": "{business} formulates in small batches. Every {product} is tested for how it feels first, then for what it does."}
+    },
+    "fashion": {
+      "title": "Fashion, apparel, textiles",
+      "journey": "fabric close-up -> movement -> garment form -> detail",
+      "setting": "a bright, minimal studio; fabric in motion (no faces)",
+      "object": "the garment",
+      "legs": [
+        {"beat": "Cloth", "camera": "slow forward move along moving fabric", "sees": "weave and fold", "overlay": "Begin with the cloth."},
+        {"beat": "Motion", "camera": "continue as the fabric settles into a shape", "sees": "drape and fall", "overlay": "Cut to move."},
+        {"beat": "Form", "camera": "continue to reveal {object} on a form", "sees": "{object} in full", "overlay": "A silhouette."},
+        {"beat": "Seam", "camera": "continue toward the seam / collar", "sees": "stitching, buttons", "overlay": "Stitched slowly."},
+        {"beat": "Hold", "camera": "slow push to a detail hold", "sees": "texture and edge", "overlay": "Wear it often."}
+      ],
+      "palette": "off-white, ink, one seasonal colour",
+      "type": "elegant serif or fine grotesk",
+      "tone": "restrained, editorial",
+      "risks": ["faces and hands", "fabric physics glitches", "pattern drift"],
+      "layers": {"headline": ["Cut To Move,", "Made To Last"], "paragraph": "{business} makes {product} in small runs.", "bold": "Fewer pieces, better made.", "big": "{business} designs a few pieces each season and makes them well: the cloth chosen first, the cut second, the finish last."}
+    },
+    "automotive": {
+      "title": "Automotive, motorcycles, mobility",
+      "journey": "approach in the open -> the lines -> the wheel/light -> the cabin",
+      "setting": "an empty road or studio at dusk with reflective floor",
+      "object": "the car",
+      "legs": [
+        {"beat": "Approach", "camera": "low forward glide toward {object}", "sees": "silhouette and stance", "overlay": "Stance."},
+        {"beat": "Lines", "camera": "continue along the flank", "sees": "body lines and reflections", "overlay": "One continuous line."},
+        {"beat": "Wheel", "camera": "continue and lower toward the wheel / light", "sees": "wheel, brake, headlight", "overlay": "Details that work."},
+        {"beat": "Cabin", "camera": "continue up and in through the window", "sees": "interior materials", "overlay": "Built around the driver."},
+        {"beat": "Hold", "camera": "slow push to the dashboard / key detail", "sees": "controls and stitching", "overlay": "Drive it."}
+      ],
+      "palette": "gunmetal, deep blue or red accent, cool light",
+      "type": "wide grotesk, tight tracking",
+      "tone": "confident, technical, short",
+      "risks": ["license plates and badges are rendered wrongly", "reflections warp", "wheel spokes alias"],
+      "layers": {"headline": ["Built Around", "The Drive"], "paragraph": "{product} from {business}.", "bold": "Engineered to be felt.", "big": "{business} tunes every {product} by hand: the line of the body, the weight of the steering, the sound under load."}
+    },
+    "tech-saas-app": {
+      "title": "Software, SaaS, apps, AI",
+      "journey": "particles/data -> structure -> interface -> result",
+      "setting": "an abstract dark space of light and glass",
+      "object": "the interface",
+      "legs": [
+        {"beat": "Signal", "camera": "forward move through drifting points of light", "sees": "points of data", "overlay": "Too much noise."},
+        {"beat": "Structure", "camera": "continue as the points form lines and a grid", "sees": "order emerging", "overlay": "Give it a shape."},
+        {"beat": "Interface", "camera": "continue toward a floating glass panel", "sees": "{object} (abstract, no readable text)", "overlay": "One place for everything."},
+        {"beat": "Flow", "camera": "continue through the panel along connected elements", "sees": "connected modules", "overlay": "Everything talks."},
+        {"beat": "Result", "camera": "slow push to a calm, bright result state", "sees": "a clean outcome", "overlay": "Done."}
+      ],
+      "palette": "near-black, electric blue or violet, white",
+      "type": "modern grotesk, mono labels",
+      "tone": "direct, specific, no hype",
+      "risks": ["readable UI text must be HTML overlay, never generated", "logo rendering", "too many glowing elements"],
+      "layers": {"headline": ["Less Noise,", "More Work Done"], "paragraph": "{business} brings {product} into one calm place.", "bold": "Set up in an afternoon.", "big": "{business} connects the tools you already use, removes the duplicate steps and leaves one clear place to work."}
+    },
+    "clinic-dental-wellness": {
+      "title": "Clinics, dental, wellness, spas",
+      "journey": "water/light -> calm surface -> clean space -> warm finish",
+      "setting": "a bright, calm, minimal treatment space",
+      "object": "the space",
+      "legs": [
+        {"beat": "Drop", "camera": "slow forward move toward a single water droplet", "sees": "a droplet in clear light", "overlay": "Care begins quietly."},
+        {"beat": "Surface", "camera": "continue as the droplet meets still water", "sees": "concentric rings", "overlay": "Precision, not pressure."},
+        {"beat": "Space", "camera": "continue and open into {object}", "sees": "a calm, bright room", "overlay": "A calm place to be treated."},
+        {"beat": "Detail", "camera": "continue toward soft equipment and plants", "sees": "clean materials", "overlay": "Every detail considered."},
+        {"beat": "Warm", "camera": "slow push as warm light spreads", "sees": "warm, welcoming close", "overlay": "Unhurried."}
+      ],
+      "palette": "aqua, white, soft teal, warm light at the end",
+      "type": "clean grotesk, light weights",
+      "tone": "reassuring, plain words, no medical claims",
+      "risks": ["teeth/faces (avoid close-ups)", "medical claims in copy", "sterile look"],
+      "layers": {"headline": ["Care, Without", "The Waiting Room"], "paragraph": "{business} is a calm place for {product}.", "bold": "Book a quiet first visit.", "big": "{business} is designed around how you feel before, during and after your visit. Unhurried time, clear answers and a space that is easy to be in."}
+    },
+    "food-beverage-packaging": {
+      "title": "Food, beverage, packaged products",
+      "journey": "ingredients -> transformation -> pack -> pour/serve",
+      "setting": "a dark, warm studio with steam, light rays and ingredient colour",
+      "object": "the pack",
+      "legs": [
+        {"beat": "Ingredient", "camera": "slow forward move through the raw ingredient", "sees": "leaves, grains or fruit in light", "overlay": "Start with the ingredient."},
+        {"beat": "Transform", "camera": "continue as the ingredient becomes the product", "sees": "liquid, powder or crust forming", "overlay": "Slowly made."},
+        {"beat": "Pack", "camera": "continue as {object} comes into focus", "sees": "{object} (no readable label text)", "overlay": "Packed fresh."},
+        {"beat": "Serve", "camera": "continue toward the pour / bite", "sees": "the product being served", "overlay": "Best enjoyed now."},
+        {"beat": "Hold", "camera": "slow push to a detail hold", "sees": "texture and steam", "overlay": "Taste it."}
+      ],
+      "palette": "deep black or brown, one rich ingredient colour, gold highlight",
+      "type": "serif display + small caps labels",
+      "tone": "sensory, honest",
+      "risks": ["label text rendered wrongly (add the brand in HTML)", "physical impossibilities in pours", "colour drift"],
+      "layers": {"headline": ["From The Source,", "To Your Table"], "paragraph": "{business} makes {product} from few ingredients.", "bold": "Nothing hidden.", "big": "{business} works with the same growers every season. The ingredient decides the product, and the product decides the pace."}
+    },
+    "fitness-sport": {
+      "title": "Fitness, sport, performance",
+      "journey": "dust and light -> frozen movement -> impact -> form",
+      "setting": "a dark training hall with hard side light",
+      "object": "the athlete's tools (no faces)",
+      "legs": [
+        {"beat": "Charge", "camera": "forward move through chalk dust in a shaft of light", "sees": "particles in light", "overlay": "Before the effort."},
+        {"beat": "Move", "camera": "continue toward {object}", "sees": "equipment, tension", "overlay": "Built, not given."},
+        {"beat": "Impact", "camera": "continue as dust and light burst", "sees": "frozen motion", "overlay": "One rep at a time."},
+        {"beat": "Form", "camera": "continue to a controlled close", "sees": "grip, strap, surface", "overlay": "Details win."},
+        {"beat": "Hold", "camera": "slow push to a hero detail", "sees": "texture and light", "overlay": "Start today."}
+      ],
+      "palette": "black, ember red or amber, white",
+      "type": "bold grotesk, tight leading",
+      "tone": "direct, short sentences",
+      "risks": ["human anatomy (avoid bodies)", "motion blur artifacts"],
+      "layers": {"headline": ["Built One Rep", "At A Time"], "paragraph": "{business}: {product} for people who train.", "bold": "No shortcuts.", "big": "{business} is run by people who train. We build programs that start with how you move and end with what you can lift."}
+    },
+    "education-course": {
+      "title": "Education, courses, academies",
+      "journey": "spark -> lines of thought -> structure -> mastery",
+      "setting": "an abstract warm-lit study space",
+      "object": "the idea",
+      "legs": [
+        {"beat": "Spark", "camera": "forward move toward a small point of light", "sees": "a spark in the dark", "overlay": "It starts with a question."},
+        {"beat": "Lines", "camera": "continue as lines grow from the point", "sees": "connections forming", "overlay": "Connect the pieces."},
+        {"beat": "Structure", "camera": "continue through a growing structure", "sees": "an organised system", "overlay": "Build a method."},
+        {"beat": "Practice", "camera": "continue toward a desk with tools", "sees": "pens, paper, light (no faces)", "overlay": "Practice, with feedback."},
+        {"beat": "Mastery", "camera": "slow push to a bright result", "sees": "a clear finished form", "overlay": "Make it yours."}
+      ],
+      "palette": "deep navy, warm amber highlight",
+      "type": "friendly serif or humanist sans",
+      "tone": "encouraging, concrete",
+      "risks": ["readable text in the image (avoid)", "faces"],
+      "layers": {"headline": ["Learn It Once,", "Use It For Good"], "paragraph": "{business} teaches {product} step by step.", "bold": "Small groups, real feedback.", "big": "{business} is built for people who want the skill, not the certificate: clear lessons, real projects and someone who answers."}
+    },
+    "legal-finance-consulting": {
+      "title": "Legal, finance, consulting, B2B services",
+      "journey": "paper/glass/stone -> structure -> clarity",
+      "setting": "an abstract architectural interior in stone and glass",
+      "object": "the table",
+      "legs": [
+        {"beat": "Weight", "camera": "slow forward move along a stone / paper surface", "sees": "texture and weight", "overlay": "Details carry weight."},
+        {"beat": "Structure", "camera": "continue past columns / pillars", "sees": "rhythm and order", "overlay": "Structure first."},
+        {"beat": "Glass", "camera": "continue through a glass partition", "sees": "transparency", "overlay": "Clear terms."},
+        {"beat": "Table", "camera": "continue toward {object} in a calm room", "sees": "a prepared table", "overlay": "Prepared for you."},
+        {"beat": "Light", "camera": "slow push as light settles", "sees": "calm hold", "overlay": "Decisions made well."}
+      ],
+      "palette": "charcoal, stone, muted gold",
+      "type": "serif display + small caps",
+      "tone": "measured, precise, no jargon",
+      "risks": ["generated text/documents (avoid)", "people"],
+      "layers": {"headline": ["Clear Advice,", "Calmly Given"], "paragraph": "{business} advises on {product}.", "bold": "No surprises.", "big": "{business} works in plain language: what the options are, what they cost, and what we would do in your place."}
+    },
+    "craft-workshop-manufacturing": {
+      "title": "Craft, workshops, manufacturing, makers",
+      "journey": "raw material -> tool -> making -> finished piece",
+      "setting": "a warm workshop with natural light and wood dust in the air",
+      "object": "the finished piece",
+      "legs": [
+        {"beat": "Material", "camera": "slow forward move along raw material", "sees": "wood grain / leather / metal", "overlay": "It starts as material."},
+        {"beat": "Tool", "camera": "continue toward the tools on the bench", "sees": "hand tools, light", "overlay": "Made by hand."},
+        {"beat": "Making", "camera": "continue as the work takes shape (no hands in frame)", "sees": "a part being shaped", "overlay": "Slowly, on purpose."},
+        {"beat": "Finish", "camera": "continue to the finished surface", "sees": "stitching, joinery, polish", "overlay": "Finished once."},
+        {"beat": "Piece", "camera": "slow push to {object}", "sees": "{object} in the workshop light", "overlay": "Built to be kept."}
+      ],
+      "palette": "oak, leather brown, brass, dusty light",
+      "type": "serif display, typewriter-like labels",
+      "tone": "honest, tactile",
+      "risks": ["hands (avoid)", "sawdust particles flicker"],
+      "layers": {"headline": ["Made Slowly,", "Made To Keep"], "paragraph": "{business} makes {product} in a small workshop.", "bold": "One piece at a time.", "big": "{business} chooses the material first and the method second. Every {product} is made once, for one person."}
+    },
+    "generic": {
+      "title": "Any other business (default)",
+      "journey": "wide establishing -> approach -> reveal the subject -> close on the detail",
+      "setting": "{setting}",
+      "object": "{object}",
+      "legs": [
+        {"beat": "Establish", "camera": "slow forward dolly toward the subject's world", "sees": "the setting with {object} in the distance", "overlay": "Where it begins."},
+        {"beat": "Approach", "camera": "continue forward, closer", "sees": "{object} clearly", "overlay": "Made with care."},
+        {"beat": "Reveal", "camera": "continue and drift to the best angle", "sees": "{object} full, well lit", "overlay": "The idea."},
+        {"beat": "Detail", "camera": "continue lower / closer along the surface", "sees": "texture, edge, material", "overlay": "The detail."},
+        {"beat": "Close", "camera": "slow push to a hero close-up", "sees": "the signature detail", "overlay": "Made for you."}
+      ],
+      "palette": "choose from the brand; dark base with one warm accent works almost everywhere",
+      "type": "one serif display + small tracked uppercase labels",
+      "tone": "calm and specific",
+      "risks": ["generated text/logos (never; use HTML)", "people (avoid close-ups)", "object drift between legs"],
+      "layers": {"headline": ["Made With Care,", "Made For You"], "paragraph": "{business} makes {product}.", "bold": "One line to remember.", "big": "Say what makes {business} different in two plain sentences, then end on the detail the visitor can picture."}
+    }
+  }
+}

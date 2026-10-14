@@ -1,0 +1,13 @@
+{
+  "bg": "#0b0f14",
+  "surface": "#121922",
+  "accent": "#1f2a37",
+  "accent_deep": "#0e141b",
+  "highlight": "#c9a063",
+  "text": "#f6f3ec",
+  "display_font": "Lora",
+  "body_font": "Lora",
+  "fa_font": "Vazirmatn",
+  "fonts_url": "https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap",
+  "scroll_height_vh": 500
+}

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+node_modules/
+.next/
+out/
+work/
+frames_review/
+report/
+dist-usb/
+*.mp4
+!examples/**/*.mp4
+.DS_Store

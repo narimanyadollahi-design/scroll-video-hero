@@ -1,0 +1,19 @@
+{
+  "out_dir": "work",
+  "size": [1920, 1080],
+  "fps": 24,
+  "crf": 10,
+  "segments": [
+    { "type": "clip", "src": "clips/01.mp4", "start": 0, "end": 95, "label": "clip 1" },
+
+    { "type": "bridge", "keys": ["clips/01.mp4#95", "clips/02.mp4#0"], "scale": 1.0, "label": "bridge 1 (small gap)" },
+
+    { "type": "clip", "src": "clips/02.mp4", "start": 0, "end": 91, "label": "clip 2 (cut before the end snap)" },
+
+    { "type": "clip", "src": "clips/03.mp4", "start": 4, "end": 95, "label": "clip 3 (generated from clip 2's last good frame)" },
+
+    { "type": "clip", "src": "clips/gap-04-05.mp4", "retime": [4.0, 1.7], "label": "gap clip (slow start, retimed)" },
+    { "type": "clip", "src": "clips/05.mp4", "start": 19, "end": 95, "label": "clip 5" }
+  ],
+  "equalize": { "target": 1.5, "maxskip": 4 }
+}

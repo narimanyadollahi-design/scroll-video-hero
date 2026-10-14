@@ -1,0 +1,49 @@
+{
+  "languages": ["en"],
+  "default_lang": "en",
+  "sections": ["offerings", "about", "cta"],
+  "brand": {
+    "name": "YOUR BRAND",
+    "descriptor": { "en": "Tagline or category" },
+    "tagline": { "en": "One quiet sentence about what you make." }
+  },
+  "hero": {
+    "mode": "video",
+    "layers": {
+      "nav": ["Collection", "Craft", "Materials", "Contact"],
+      "navButton": "Request a Quote",
+      "paragraph": {
+        "pre": "One or two sentences that say what you do and for whom.",
+        "bold": "The line you want people to remember."
+      },
+      "headline": ["Your Headline In", "Two Short Lines"],
+      "cta": "Explore the Collection",
+      "big": "A longer statement that appears word by word while the camera keeps moving. Say what makes the work different, in plain words.",
+      "footerTag": "Made to order",
+      "columns": [
+        { "title": "First product", "text": "One short sentence about it." },
+        { "title": "Second product", "text": "One short sentence about it." }
+      ],
+      "card": { "title": "Ready To Begin?", "button": "Get In Touch", "href": "mailto:hello@example.com" }
+    }
+  },
+  "offerings": {
+    "eyebrow": { "en": "THE COLLECTION" },
+    "title": { "en": "Three things we do well." },
+    "items": [
+      { "name": { "en": "First" }, "blurb": { "en": "One sentence." }, "tag": { "en": "Featured" } },
+      { "name": { "en": "Second" }, "blurb": { "en": "One sentence." } },
+      { "name": { "en": "Third" }, "blurb": { "en": "One sentence." } }
+    ]
+  },
+  "about": {
+    "title": { "en": "A short statement of belief." },
+    "body": { "en": "Two or three sentences. Keep the voice calm and specific." }
+  },
+  "cta": {
+    "title": { "en": "Make it yours." },
+    "body": { "en": "Tell us what you have in mind." },
+    "button": { "en": "Get in touch" },
+    "href": "mailto:hello@example.com"
+  }
+}

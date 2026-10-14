@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+public/hero*.mp4
+public/hero-poster.jpg
