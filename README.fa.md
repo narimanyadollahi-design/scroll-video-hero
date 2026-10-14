@@ -19,7 +19,7 @@
 ## نصب به‌عنوان اسکیل Claude Code
 
 ```bash
-git clone https://github.com/<you>/scroll-video-hero ~/.claude/skills/scroll-video-hero
+git clone https://github.com/narimanyadollahi-design/scroll-video-hero ~/.claude/skills/scroll-video-hero
 pip install -r ~/.claude/skills/scroll-video-hero/requirements.txt      # opencv-python, numpy, Pillow
 ```
 همچنین لازم است: FFmpeg و FFprobe در PATH، و Node.js ‏18 به بالا (برای صفحه).

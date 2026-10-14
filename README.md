@@ -19,7 +19,7 @@ It is a Claude Code skill plus the tools it drives:
 ## Install as a Claude Code skill
 
 ```bash
-git clone https://github.com/<you>/scroll-video-hero ~/.claude/skills/scroll-video-hero
+git clone https://github.com/narimanyadollahi-design/scroll-video-hero ~/.claude/skills/scroll-video-hero
 pip install -r ~/.claude/skills/scroll-video-hero/requirements.txt      # opencv-python, numpy, Pillow
 ```
 Also needed: FFmpeg + FFprobe on PATH, Node.js 18+ (for the page).
